@@ -1,0 +1,41 @@
+spring:
+  application:
+    name: Customer Profile Service
+  profiles:
+    active:
+  aop:
+    proxy-target-class: true
+  # Enabling H2 Console
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  resources:
+    chain:
+      enabled: true
+server:
+  servlet:
+    context-path: /customer-profile/services/
+  port: 8080
+swagger:
+  title: "Customer Profile Developer Portal"
+  description: "Welcome to the API Developer Portal. Here you'll find a list of APIs to perform different operations related to customer profile"
+  email: "chiragdesai2005@gmail.com"
+  license: "License of API"
+  url: "API license URL"
+  version: "V1"
+  name: "chirag desai"
+management:
+  security:
+    enabled: true
+jwt:
+  security:
+    errorMessage: "JWT Token is missing"
+    secret: "password123"
+    headerKey: "Authorization"
+    header: "Bearer"
+

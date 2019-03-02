@@ -1,0 +1,8 @@
+CREATE TABLE CUSTOMER_PROFILE_TBL (
+    ID int AUTO_INCREMENT,
+    PROFILE_DOCUMENT varchar2(2000),
+    CREATED_BY varchar2(100),
+    CREATED_DATE varchar2(100),
+    UPDATED_BY varchar2(100),
+    UPDATED_DATE varchar2(100)
+);
