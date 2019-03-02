@@ -1,4 +1,4 @@
-# Spring REST API service to expose customer profile REST APIs
+# Springboot REST API service to expose customer profile REST APIs
 
 - Prerequisites softwares
     - JDK 1.8 or higher
@@ -14,6 +14,7 @@
 - Order to call API
     - call /v1/token
     - use this token in header like below
+        
         Authorization         Bearer <token>            
     
 - GET, POST, PUT APIs are implemented with h2 in memory database    
@@ -21,7 +22,7 @@
 - Security 
     - basic Jwt is implemented (/v1/token) - post API to get Jwt
     - Preference is to use third party API gateway like Apigee Edge or APACHE WAF or NgInx or TAM etc..
-        - Manage security at following levels
+        - Can manage security at following levels
             1) Quota per user, time
             2) Spike arrest 
             3) OAUTH2 
