@@ -5,7 +5,7 @@
     - Apache maven 3.0 or higher
 
 - How to build the application
-   open terminal/command window and run 'mvn clen install' command from home directory the application 
+   open terminal/command window and run 'mvn clen install' command from the application's home directory 
    run Springboot application from intellij/eclispe or directly run fat jat from target folder after successful build.
 
 - Swagger API docs. URL
@@ -33,6 +33,8 @@
             7) Password storgae and retrieval from secured vault
             8) Data encryption if data is customer/confidential
             9) Logging check - not to log any sensitive info.
+            10) Spring dependency Vulnerability scan using blackduck
+            11) Static code scan using fortify
             
 - Assumptions
     - H2 DB must be replaced with Mongo DB/No SQL DB
