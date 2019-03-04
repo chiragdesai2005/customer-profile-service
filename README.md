@@ -6,6 +6,7 @@
 
 - How to build the application
    open terminal/command window and run 'mvn clen install' command from home directory the application 
+   run Springboot application from intellij/eclispe or directly run fat jat from target folder after successful build.
 
 - Swagger API docs. URL
     - http://localhost:8080/customer-profile/services/swagger-ui.html
@@ -27,6 +28,11 @@
             2) Spike arrest 
             3) OAUTH2 
             4) Spring security
+            5) SSL enabled APIs
+            6) Penetration testing
+            7) Password storgae and retrieval from secured vault
+            8) Data encryption if data is customer/confidential
+            9) Logging check - not to log any sensitive info.
             
 - Assumptions
     - H2 DB must be replaced with Mongo DB/No SQL DB
